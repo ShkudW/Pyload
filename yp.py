@@ -9,7 +9,7 @@ import hashlib
 import hashlib
 
 
-def _s(import *parts): 
+def _s(*parts): 
     return "".join(parts)
 
 _ENV_ETW = _s("COMP","LUS_","ETW","Enab","led")
