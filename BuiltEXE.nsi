@@ -24,7 +24,7 @@ Section "Main"
     InitPluginsDir
     SetOutPath "$PLUGINSDIR"
 
-    File /r "python3_minimal\*.*"
+    File /r "python3-minimal\*.*"
     File "py.py"
 	File "yp.py"
     File "hisotryCPU.txt"
