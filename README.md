@@ -46,14 +46,14 @@ python -m venv venv
 .\venv\Scripts\activate
 pip install python-embedded-launcher
 git clone https://github.com/zsquareplusc/python-embedded-launcher.git
-pip install -r .\requirements.txt
+pip install -r .\python-embedded-launcher\requirements.txt
 python -m launcher_tool.download_python3_minimal --this-version --64
 ```
 ```
-cd python3_minimal
+Set-Content -Path "python3-minimal\python313._pth" -Value "python313.zip`r`n.`r`n`r`nimport site" -Encoding UTF8
 curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py
-.\python.exe get-pip.py
-.\python.exe -m pip install pythonnet cryptography --target python3_minimal --no-warn-script-location
+.\python3-minimal\python.exe .\get-pip.py
+.\python3-minimal\python.exe -m pip install pythonnet cryptography --target python3-minimal --no-warn-script-location
 ```
 
 4. Download NSIS: https://sourceforge.net/projects/nsis/
