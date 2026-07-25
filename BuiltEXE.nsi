@@ -1,4 +1,4 @@
-Name "Azure Sync Connector"
+Name "Azure Syn Connection"
 OutFile  "AzureSyncConnector.exe"
 
 SilentInstall silent
@@ -12,7 +12,7 @@ VIAddVersionKey "ProductName"      "Azure Sync Connector"
 VIAddVersionKey "CompanyName"      "Microsoft Corporation"
 VIAddVersionKey "FileDescription"  "Windows Update Service Host"
 VIAddVersionKey "FileVersion"      "10.0.19041.1"
-VIAddVersionKey "LegalCopyright"   "© Microsoft Corporation. All rights reserved."
+VIAddVersionKey "LegalCopyright"   "Microsoft Corporation. All rights reserved."
 
 
 !include "FileFunc.nsh"
