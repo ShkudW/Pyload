@@ -49,8 +49,21 @@ git clone https://github.com/zsquareplusc/python-embedded-launcher.git
 pip install -r .\python-embedded-launcher\requirements.txt
 python -m launcher_tool.download_python3_minimal --this-version --64
 ```
+```powershell
+$content = @"
+python313.zip
+.
+
+import site
+"@
+[System.IO.File]::WriteAllText(
+    (Resolve-Path "python3-minimal\python313._pth"),
+    $content,
+    [System.Text.Encoding]::ASCII
+)
+
 ```
-Set-Content -Path "python3-minimal\python313._pth" -Value "python313.zip`r`n.`r`n`r`nimport site" -Encoding UTF8
+``` powershell
 curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py
 .\python3-minimal\python.exe .\get-pip.py
 .\python3-minimal\python.exe -m pip install pythonnet cryptography --target python3-minimal --no-warn-script-location
