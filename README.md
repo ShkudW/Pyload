@@ -10,7 +10,7 @@ A Python-based in-memory .NET assembly loader with low-noise defense evasion, de
 
 
 ### AMSI bypass:
-* Technique: .NET Reflection — amsiInitFailed field manipulation
+* Technique: .NET Reflection amsiInitFailed field manipulation
 * Accesses System.Management.Automation.AmsiUtils via BindingFlags.NonPublic | Static
 * Sets amsiInitFailed = True CLR skips all AMSI scan calls
 
