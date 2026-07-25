@@ -19,8 +19,13 @@ A Python-based in-memory .NET assembly loader with low-noise defense evasion, de
 - Disrupts sandbox timing analysis and behavioral heuristics that expect fixed execution patterns
 
 
+## Building automated: 
+```powershell
+\build.ps1 -PathToFile C:\Temp\Rubeus.exe -FileArgs "hash /password:Aa123456" -Key "Aa12345677!!"
+```
 
-## Building:
+
+## Building Manual:
 
 1. Enrypt the PE (P.txt file will create):
 ```python
