@@ -3,17 +3,14 @@
 
 A Python-based in-memory .NET assembly loader with low-noise defense evasion, designed for authorized red team engagements.
 
-### ETW bypass:
-* Technique: Environment variable pre CLR initialization
+### ETW bypass:       
 * Sets COMPLUS_ETWEnabled=0 and COMPlus_EnableDiagnostics=0 before the .NET runtime loads
-* CLR reads these at startup and skips ETW initialization entirely
+
 
 
 ### AMSI bypass:
-* Technique: .NET Reflection amsiInitFailed field manipulation
 * Accesses System.Management.Automation.AmsiUtils via BindingFlags.NonPublic | Static
-* Sets amsiInitFailed = True CLR skips all AMSI scan calls
-
+* Sets amsiInitFailed = True 
 
 - Random sleep intervals injected between every critical stage (CLR load, decryption, execution)
 - Disrupts sandbox timing analysis and behavioral heuristics that expect fixed execution patterns
