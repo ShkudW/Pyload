@@ -21,7 +21,7 @@ A Python-based in-memory .NET assembly loader with low-noise defense evasion, de
 
 ## Building automated: 
 ```powershell
-\build.ps1 -PathToFile C:\Temp\Rubeus.exe -FileArgs "hash /password:Aa123456" -Key "Aa12345677!!"
+.\build.ps1 -PathToFile C:\Temp\Rubeus.exe -FileArgs "hash /password:Aa123456" -Key "Aa12345677!!"
 ```
 
 
