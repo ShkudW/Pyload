@@ -78,5 +78,5 @@ curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py
 
 5. Comiple the loader:
 ```
-Right Client on launcher.nsi and push Compile NSIS Script -> output file : AzureSyncConnector.exe
+Right click on BuildExe.nsi and push Compile NSIS Script -> output file : AzureSyncConnector.exe
 ```
