@@ -12,6 +12,8 @@ A Python-based in-memory .NET assembly loader with low-noise defense evasion, de
 * Accesses System.Management.Automation.AmsiUtils via BindingFlags.NonPublic | Static
 * Sets amsiInitFailed = True 
 
+
+
 - Random sleep intervals injected between every critical stage (CLR load, decryption, execution)
 - Disrupts sandbox timing analysis and behavioral heuristics that expect fixed execution patterns
 
