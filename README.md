@@ -27,7 +27,7 @@ A Python-based in-memory .NET assembly loader with low-noise defense evasion, de
 
 ## Building Manual:
 
-1. Enrypt the PE (P.txt file will create):
+1. Enrypt the PE (P.txt file will created):
 ```python
   python Encryptor.py C:\Temp\Rubeus.exe -a "hash /password:Aa123456" -k "Aa12345677!!"
 
